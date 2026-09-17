@@ -17,4 +17,6 @@ enum class SolveStatus {
     Error                 // Dimensões inválidas ou parâmetros inconsistentes
 };
 
+
+
 #endif // TYPES_HPP

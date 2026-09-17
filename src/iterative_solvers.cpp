@@ -1,9 +1,9 @@
 #include "iterative_solvers.hpp"
 #include <cmath>
 
-IterativeResult jacobi_solve(const Matrix& A, const Vector& b, Vector& x,
+LinearSolveResult jacobi_solve(const Matrix& A, const Vector& b, Vector& x,
                              double tol, int max_iter) {
-    IterativeResult result;
+    LinearSolveResult result;
 
     // TODO:
     // 1. Validar se A é quadrada e se as dimensões de A, b e x são compatíveis.
@@ -20,9 +20,9 @@ IterativeResult jacobi_solve(const Matrix& A, const Vector& b, Vector& x,
     return result;
 }
 
-IterativeResult seidel_solve(const Matrix& A, const Vector& b, Vector& x,
+LinearSolveResult seidel_solve(const Matrix& A, const Vector& b, Vector& x,
                              double tol, int max_iter) {
-    IterativeResult result;
+    LinearSolveResult result;
 
     // TODO:
     // 1. Validar dimensões e zeros na diagonal principal.
